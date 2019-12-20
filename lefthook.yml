@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    frontend-linter:
+      glob: '*.{js, jsx}'
+      run: eslint {staged_files}

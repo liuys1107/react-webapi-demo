@@ -1,0 +1,21 @@
+{
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  },
+  "presets": [
+    ["@babel/typescript"],
+    [
+      "@babel/preset-react",
+      {
+        "corejs": "3",
+        "useBuiltIns": "usage",
+        "loose": true,
+        "modules": false
+      }
+    ],
+    ["@babel/preset-env"]
+  ],
+  "plugins": ["@babel/plugin-syntax-dynamic-import", "@babel/plugin-proposal-class-properties"]
+}
