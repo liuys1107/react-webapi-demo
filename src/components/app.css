@@ -1,0 +1,138 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.audio{
+    display: none;
+}
+
+.time-line-box{
+    width: 100%;
+    height: 3px;
+    margin: 24px 0 23px;
+    background-color: #187cff;
+}
+
+.start-btn {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 160px;
+    font-size: 16px;
+    letter-spacing: 6px;
+    background: #187cff;
+    border: 1px solid #478eea;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.result_output {
+    width: 490px;
+    height: 200px;
+    overflow: auto;
+    background: #F0F0F0;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.time-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.start-taste-line {
+    display: inline-block;
+}
+
+.start-taste-line hr {
+    background-color: #187cff;
+    width: 3px;
+    height: 10px;
+    margin: 0 5px;
+    display: inline-block;
+    border: none;
+}
+
+.hr {
+    animation: note 0.2s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes note {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(4);
+    }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes note {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(4);
+    }
+}
+
+.hr1 {
+    animation-delay: -1s;
+}
+
+.hr2 {
+    animation-delay: -0.9s;
+}
+
+.hr3 {
+    animation-delay: -0.8s;
+}
+
+.hr4 {
+    animation-delay: -0.7s;
+}
+
+.hr5 {
+    animation-delay: -0.6s;
+}
+
+.hr6 {
+    animation-delay: -0.5s;
+}
+
+.hr7 {
+    animation-delay: -0.4s;
+}
+
+.hr8 {
+    animation-delay: -0.3s;
+}
+
+.hr9 {
+    animation-delay: -0.2s;
+}
+
+.hr10 {
+    animation-delay: -0.1s;
+}
